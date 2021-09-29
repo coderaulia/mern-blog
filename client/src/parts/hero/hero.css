@@ -1,5 +1,6 @@
 .hero {
    margin-top: 60px;
+   height: 130px;
 }
 
 .heroTitles {
@@ -12,19 +13,14 @@
 
 .heroTitleSm {
    position: absolute;
-   top: 18%;
-   font-size: 20px;
+   top: 17%;
+   font-size: 18px;
+   border-bottom: solid 2px #a7a4a4;
 }
 
 .heroTitleLg {
    position: absolute;
-   font-size: 80px;
-   top: 20%;
-}
-
-.heroImg {
-   width: 100%;
-   height: 450px;
-   margin-top: 80px;
-   object-fit: cover;
+   font-size: 54px;
+   top: 21%;
+   padding: 0;
 }
