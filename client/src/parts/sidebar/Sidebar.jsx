@@ -9,7 +9,9 @@ export default function Sidebar() {
       <div className="sidebar">
          <div className="sidebarItem">
             <span className="sidebarTitle">About me</span>
-            <img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" />
+            <div className="sidebarImgWrapper">
+               <img src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" />
+            </div>
             <h3 style={{marginTop: 10}}>Coderaulia</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde perferendis inventore voluptatem, delectus saepe?</p>
          </div>
