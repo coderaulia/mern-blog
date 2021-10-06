@@ -13,3 +13,7 @@ I use React to build the client side. And I also installed some packages that yo
 -  [x] Create index.js and setup Express.
 -  [x] Create .env file and paste code from Mongodb.
 -  [x] Create routes & models folder. And also create models file (Post, User, Category).
+
+## Using Routes
+
+-  [x] Register new routes on `index.js`. Example: `app.use("/api/users", userRoute);`.
