@@ -41,7 +41,7 @@ export default function SinglePost() {
             Author:
             <Link className="link" to={`/?user=${post.username}`}>
               <b className="singlePostAuthor">
-                Coderaulia {" "}
+                {post.username}
               </b>
             </Link>
           </span>&nbsp; &ndash; &nbsp;

@@ -8,7 +8,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 export default function TopBar() {
    // user session testing
-   const user = true;
+   const user = false;
    return (
       <div className="top">
          <div className="topLeft">
@@ -24,7 +24,6 @@ export default function TopBar() {
                <li className="topMenuItem"><Link className="link" to="/">About</Link></li>
                <li className="topMenuItem"><Link className="link" to="/">Contact</Link></li>
                <li className="topMenuItem"><Link className="link" to="/">Write</Link></li>
-               <li className="topMenuItem"><Link className="link" to="/">Logout</Link></li>
             </ul>
          </div>
          <div className="topRight">
@@ -37,19 +36,21 @@ export default function TopBar() {
                />
             </Link>
              ) : (
-            <ul className="topList">
-               <li className="topListItem">
+            <ul className="topMenu">
+               <li className="topMenuItem">
                <Link className="link" to="/login">
                   Login
                </Link>
                </li>
-               <li className="topListItem">
+               <li className="topMenuItem">
                <Link className="link" to="/register">
                   Register
                </Link>
                </li>
             </ul>
          )}
+         
+         
             <SearchIcon className="searchIcon"/>
          </div>
 
