@@ -1,5 +1,4 @@
 const router = require("express").Router();
-import { Categories } from "parts/Categories";
 const User = require("../models/User");
 const Post = require("../models/Post");
 
