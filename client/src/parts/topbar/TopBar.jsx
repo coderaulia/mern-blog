@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {Link} from "react-router-dom"
 import './topbar.css'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import SearchIcon from '@mui/icons-material/Search';
+import { Context } from '../../context/Context';
 
 export default function TopBar() {
-   // user session testing
-   const user = false;
+   
+   const { user, dispatch } = useContext(Context);
+
+   const handleLogout = () => {
+      dispatch({type:"LOGOUT"})
+   }
    return (
       <div className="top">
          <div className="topLeft">
@@ -21,9 +26,10 @@ export default function TopBar() {
                <li className="topMenuItem">
                   <Link className="link" to="/">Home</Link>
                </li>
-               <li className="topMenuItem"><Link className="link" to="/">About</Link></li>
+               <li className="topMenuItem"><Link className="link" to="/about">About</Link></li>
                <li className="topMenuItem"><Link className="link" to="/">Contact</Link></li>
-               <li className="topMenuItem"><Link className="link" to="/">Write</Link></li>
+               <li className="topMenuItem"><Link className="link" to="/write">Write</Link></li>
+               <li className="topMenuItem" onClick={handleLogout}>{user && "Logout"}</li>
             </ul>
          </div>
          <div className="topRight">
