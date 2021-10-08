@@ -9,7 +9,8 @@ import { useLocation } from "react-router";
 export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
-  const [post, setPost ] = useState({})
+  const [post, setPost ] = useState({});
+  const folder = "http://localhost:2021/images/"
 
   useEffect(() => {
     const getPost = async () => {
@@ -25,7 +26,7 @@ export default function SinglePost() {
         {post.photo && (
           <img
             className="singlePostImg"
-            src={post.photo}
+            src={folder + post.photo}
             alt=""
           />
         )}
